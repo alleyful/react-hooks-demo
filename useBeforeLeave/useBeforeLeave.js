@@ -1,4 +1,6 @@
-const useBeforeLeave = onBefore => {
+import { useEffect } from "react";
+
+export const useBeforeLeave = onBefore => {
 	const handle = event => {
 		const { clientY } = event;
 		if (clientY <= 0) {

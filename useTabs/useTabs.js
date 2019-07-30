@@ -1,4 +1,4 @@
-const useTabs = (initailTab, allTabs) => {
+export const useTabs = (initailTab, allTabs) => {
 	if (!allTabs || !Array.isArray(allTabs)) {
 		return;
 	}

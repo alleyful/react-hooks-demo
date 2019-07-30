@@ -1,4 +1,6 @@
-const useTitle = initialTitle => {
+import { useEffect } from "react";
+
+export const useTitle = initialTitle => {
 	const [title, setTitle] = useState(initialTitle);
 	const updateTitle = () => {
 		const htmlTitle = document.querySelector("title");
